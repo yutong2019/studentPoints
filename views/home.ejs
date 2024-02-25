@@ -2,15 +2,27 @@
 <html>
 <head>
     <title>Welcome</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function handleClick() {
             alert('恭喜你，登录成功！');
+        }
+        function getBTCPrice() {
+            $.get("/getprice", function(data){
+                if(data.price){
+                    alert("当前的BTC价格是: " + data.price);
+                } else {
+                    alert("错误: " + data.error);
+                }
+            });
         }
     </script>
 </head>
 <body>
     <h1>Welcome</h1>
-    <!-- 定义一个按钮，点击会调用 handleClick 函数 -->
+    <!-- 定义一个按钮，点击会弹出登录成功的提示 -->
     <button onclick="handleClick()">Click me</button>
+    <!-- 定义一个按钮，点击会获取BTC价格 -->
+    <button onclick="getBTCPrice()">Get BTC Price</button>
 </body>
 </html>
