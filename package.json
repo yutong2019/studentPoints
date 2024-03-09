@@ -1,23 +1,41 @@
 {
   "name": "studentPoints",
-  "version": "1.0.0",
-  "description": "A Node.js project for Student Points",
+  "version": "1.0.1",
+  "description": "一个学生积分管理的软件，它使用了 normal-coin-price，fear-greed-index，account-login-app，express，ejs，和founction-btc-today等npm包来完成任务。",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yutong2019/studentPoints.git"
+    "url": "https://github.com/yutong2019/studentPoints.git"
   },
-  "author": "",
+  "keywords": [
+    "students",
+    "points",
+    "management",
+    "cryptocurrency",
+    "index",
+    "normal-coin-price",
+    "fear-greed-index",
+    "express",
+    "ejs",
+    "account-login-app",
+    "founction-btc-today"
+  ],
+  "author": "Yujing",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yutong2019/studentPoints/issues"
   },
   "homepage": "https://github.com/yutong2019/studentPoints#readme",
   "dependencies": {
+    "normal-coin-price": "^1.0.0",
+    "fear-greed-index": "^1.0.0",
+    "express": "^4.17.1",
+    "ejs": "^3.1.6",
     "account-login-app": "^1.0.0",
-    "express": "^4.17.1"
+    "founction-btc-today": "^1.0.0"
   }
 }
